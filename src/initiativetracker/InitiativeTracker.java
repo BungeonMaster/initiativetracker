@@ -67,7 +67,12 @@ public class InitiativeTracker extends JFrame implements ActionListener {
 			
 			for(int i = 0; i < initiativeList.size();i++) {
 				remove(initiativeList.get(i).getCreatureLabel());
-				System.out.print(initiativeList.get(i).getName());
+			}
+			
+			Collections.sort(initiativeList);
+			
+			for(int i = 0; i < initiativeList.size();i++) {
+				add(initiativeList.get(i).getCreatureLabel());
 			}
 			
 			revalidate();

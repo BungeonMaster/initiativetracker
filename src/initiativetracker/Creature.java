@@ -61,8 +61,8 @@ public class Creature implements Comparable<Creature> {
 
 	@Override
 	public int compareTo(Creature otherCreature) {
-		return (this.getInitiative() < otherCreature.getInitiative() ? -1 : 
-            (this.getInitiative() == otherCreature.getInitiative() ? 0 : 1));
+		return (this.getInitiative() < otherCreature.getInitiative() ? 1 : 
+            (this.getInitiative() == otherCreature.getInitiative() ? 0 : -1));
 	}
 	
 	 @Override     
